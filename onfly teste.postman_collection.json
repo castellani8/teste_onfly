@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "5861025d-55d4-47f6-a43b-2d5c51bb364b",
+		"name": "onfly teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Despesas",
+			"item": [
+				{
+					"name": "Listar despesas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDNmZGE2OS03MTdiLTQyODctYTYzNS0yNjg4Mjk5MTQ2NTIiLCJqdGkiOiI2NWE3MWY2YjQyZTVmMTlhNDY3OThlYWQ3YmU3YmI3MGE5ZmZkMTUxOWI3N2QxOWI2ZjA0MzJiYTA4YzQyNzViN2U1OTZkMjVjN2ZkMmZmYiIsImlhdCI6MTYzMDAyMDIwMC4yNjE0MjksIm5iZiI6MTYzMDAyMDIwMC4yNjE0MzUsImV4cCI6MTY2MTU1NjIwMC4yNTA1NTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.X4dMd5wBQgRLtREcnMKLTcSv_latwyhJ5PJ9NP8kb2jBSd7eYdKfGEjk_94E06WtKCKa717WsJYsr80leRnPNATwwnaf6IwFpcqFWQa22Sgs0cGyMccs1GwD94gfDViTwPBp8Jjp9WI2M4adtOaZq5x_XxGLfqL1rv83BnvF1TWfntdiWkYGk3cbr6haHBYzp1OZKa8UYl6An6WQBlaLLdBtGo9mfIacHOEaRRjleW1QgGIymx0SKEXos6LClx7KWlUMfdyNWKDRKWTFKDywJ9TU1VD0wOQBxqeRkSOYBKcjlkfBBoAGa5PNLjqHnGRE1VGCMW-f2Ry2xxXrNVDeY1yd8zEkpCOPwDJgGoQ7FZarSLcuHsJ2HJMbXIIjxVI4bqoWfAtNVrg3zprPgUp0wlpI-Mcww9c977Pka_TRy0VtCsI0qYe2oqcfzPF_yEsoDuI4PRk6aJ5zQjFIJWEdLe69sfsK-uH2hWd1nqRmd6V3k5L-YF6NpDj-iKs8GzO9l0OjIjhwUoQLp4QzXhTiJxzhCJAgptFvUtKmsdp2badNPDoLaeYWEWwpiuz-l0fXqIsjwDnsdBnoDvvFb3O_HmRC6v-FBVhdibpNCCFeCspSzy1hGfDINAzedT8O1Dqx90KwyhUu6mEutSj2fM4ELRgO8dc-NDXYHl373rgSa-I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"texto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/despesas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"despesas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar despesa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDNmZGE2OS03MTdiLTQyODctYTYzNS0yNjg4Mjk5MTQ2NTIiLCJqdGkiOiI2NWE3MWY2YjQyZTVmMTlhNDY3OThlYWQ3YmU3YmI3MGE5ZmZkMTUxOWI3N2QxOWI2ZjA0MzJiYTA4YzQyNzViN2U1OTZkMjVjN2ZkMmZmYiIsImlhdCI6MTYzMDAyMDIwMC4yNjE0MjksIm5iZiI6MTYzMDAyMDIwMC4yNjE0MzUsImV4cCI6MTY2MTU1NjIwMC4yNTA1NTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.X4dMd5wBQgRLtREcnMKLTcSv_latwyhJ5PJ9NP8kb2jBSd7eYdKfGEjk_94E06WtKCKa717WsJYsr80leRnPNATwwnaf6IwFpcqFWQa22Sgs0cGyMccs1GwD94gfDViTwPBp8Jjp9WI2M4adtOaZq5x_XxGLfqL1rv83BnvF1TWfntdiWkYGk3cbr6haHBYzp1OZKa8UYl6An6WQBlaLLdBtGo9mfIacHOEaRRjleW1QgGIymx0SKEXos6LClx7KWlUMfdyNWKDRKWTFKDywJ9TU1VD0wOQBxqeRkSOYBKcjlkfBBoAGa5PNLjqHnGRE1VGCMW-f2Ry2xxXrNVDeY1yd8zEkpCOPwDJgGoQ7FZarSLcuHsJ2HJMbXIIjxVI4bqoWfAtNVrg3zprPgUp0wlpI-Mcww9c977Pka_TRy0VtCsI0qYe2oqcfzPF_yEsoDuI4PRk6aJ5zQjFIJWEdLe69sfsK-uH2hWd1nqRmd6V3k5L-YF6NpDj-iKs8GzO9l0OjIjhwUoQLp4QzXhTiJxzhCJAgptFvUtKmsdp2badNPDoLaeYWEWwpiuz-l0fXqIsjwDnsdBnoDvvFb3O_HmRC6v-FBVhdibpNCCFeCspSzy1hGfDINAzedT8O1Dqx90KwyhUu6mEutSj2fM4ELRgO8dc-NDXYHl373rgSa-I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"tutorial\",\r\n    \"value\": \"1\",\r\n    \"user_id\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/despesas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"despesas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar despesa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDNmZGE2OS03MTdiLTQyODctYTYzNS0yNjg4Mjk5MTQ2NTIiLCJqdGkiOiI2NWE3MWY2YjQyZTVmMTlhNDY3OThlYWQ3YmU3YmI3MGE5ZmZkMTUxOWI3N2QxOWI2ZjA0MzJiYTA4YzQyNzViN2U1OTZkMjVjN2ZkMmZmYiIsImlhdCI6MTYzMDAyMDIwMC4yNjE0MjksIm5iZiI6MTYzMDAyMDIwMC4yNjE0MzUsImV4cCI6MTY2MTU1NjIwMC4yNTA1NTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.X4dMd5wBQgRLtREcnMKLTcSv_latwyhJ5PJ9NP8kb2jBSd7eYdKfGEjk_94E06WtKCKa717WsJYsr80leRnPNATwwnaf6IwFpcqFWQa22Sgs0cGyMccs1GwD94gfDViTwPBp8Jjp9WI2M4adtOaZq5x_XxGLfqL1rv83BnvF1TWfntdiWkYGk3cbr6haHBYzp1OZKa8UYl6An6WQBlaLLdBtGo9mfIacHOEaRRjleW1QgGIymx0SKEXos6LClx7KWlUMfdyNWKDRKWTFKDywJ9TU1VD0wOQBxqeRkSOYBKcjlkfBBoAGa5PNLjqHnGRE1VGCMW-f2Ry2xxXrNVDeY1yd8zEkpCOPwDJgGoQ7FZarSLcuHsJ2HJMbXIIjxVI4bqoWfAtNVrg3zprPgUp0wlpI-Mcww9c977Pka_TRy0VtCsI0qYe2oqcfzPF_yEsoDuI4PRk6aJ5zQjFIJWEdLe69sfsK-uH2hWd1nqRmd6V3k5L-YF6NpDj-iKs8GzO9l0OjIjhwUoQLp4QzXhTiJxzhCJAgptFvUtKmsdp2badNPDoLaeYWEWwpiuz-l0fXqIsjwDnsdBnoDvvFb3O_HmRC6v-FBVhdibpNCCFeCspSzy1hGfDINAzedT8O1Dqx90KwyhUu6mEutSj2fM4ELRgO8dc-NDXYHl373rgSa-I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/despesas/23?description=Descrição do conteudo&user_id=1&value=10.00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"despesas",
+								"23"
+							],
+							"query": [
+								{
+									"key": "description",
+									"value": "Descrição do conteudo"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								},
+								{
+									"key": "value",
+									"value": "10.00"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar despesa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDNmZGE2OS03MTdiLTQyODctYTYzNS0yNjg4Mjk5MTQ2NTIiLCJqdGkiOiI2NWE3MWY2YjQyZTVmMTlhNDY3OThlYWQ3YmU3YmI3MGE5ZmZkMTUxOWI3N2QxOWI2ZjA0MzJiYTA4YzQyNzViN2U1OTZkMjVjN2ZkMmZmYiIsImlhdCI6MTYzMDAyMDIwMC4yNjE0MjksIm5iZiI6MTYzMDAyMDIwMC4yNjE0MzUsImV4cCI6MTY2MTU1NjIwMC4yNTA1NTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.X4dMd5wBQgRLtREcnMKLTcSv_latwyhJ5PJ9NP8kb2jBSd7eYdKfGEjk_94E06WtKCKa717WsJYsr80leRnPNATwwnaf6IwFpcqFWQa22Sgs0cGyMccs1GwD94gfDViTwPBp8Jjp9WI2M4adtOaZq5x_XxGLfqL1rv83BnvF1TWfntdiWkYGk3cbr6haHBYzp1OZKa8UYl6An6WQBlaLLdBtGo9mfIacHOEaRRjleW1QgGIymx0SKEXos6LClx7KWlUMfdyNWKDRKWTFKDywJ9TU1VD0wOQBxqeRkSOYBKcjlkfBBoAGa5PNLjqHnGRE1VGCMW-f2Ry2xxXrNVDeY1yd8zEkpCOPwDJgGoQ7FZarSLcuHsJ2HJMbXIIjxVI4bqoWfAtNVrg3zprPgUp0wlpI-Mcww9c977Pka_TRy0VtCsI0qYe2oqcfzPF_yEsoDuI4PRk6aJ5zQjFIJWEdLe69sfsK-uH2hWd1nqRmd6V3k5L-YF6NpDj-iKs8GzO9l0OjIjhwUoQLp4QzXhTiJxzhCJAgptFvUtKmsdp2badNPDoLaeYWEWwpiuz-l0fXqIsjwDnsdBnoDvvFb3O_HmRC6v-FBVhdibpNCCFeCspSzy1hGfDINAzedT8O1Dqx90KwyhUu6mEutSj2fM4ELRgO8dc-NDXYHl373rgSa-I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/despesas/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"despesas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "ace",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "ace'",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver despesa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5NDNmZGE2OS03MTdiLTQyODctYTYzNS0yNjg4Mjk5MTQ2NTIiLCJqdGkiOiI2NWE3MWY2YjQyZTVmMTlhNDY3OThlYWQ3YmU3YmI3MGE5ZmZkMTUxOWI3N2QxOWI2ZjA0MzJiYTA4YzQyNzViN2U1OTZkMjVjN2ZkMmZmYiIsImlhdCI6MTYzMDAyMDIwMC4yNjE0MjksIm5iZiI6MTYzMDAyMDIwMC4yNjE0MzUsImV4cCI6MTY2MTU1NjIwMC4yNTA1NTIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.X4dMd5wBQgRLtREcnMKLTcSv_latwyhJ5PJ9NP8kb2jBSd7eYdKfGEjk_94E06WtKCKa717WsJYsr80leRnPNATwwnaf6IwFpcqFWQa22Sgs0cGyMccs1GwD94gfDViTwPBp8Jjp9WI2M4adtOaZq5x_XxGLfqL1rv83BnvF1TWfntdiWkYGk3cbr6haHBYzp1OZKa8UYl6An6WQBlaLLdBtGo9mfIacHOEaRRjleW1QgGIymx0SKEXos6LClx7KWlUMfdyNWKDRKWTFKDywJ9TU1VD0wOQBxqeRkSOYBKcjlkfBBoAGa5PNLjqHnGRE1VGCMW-f2Ry2xxXrNVDeY1yd8zEkpCOPwDJgGoQ7FZarSLcuHsJ2HJMbXIIjxVI4bqoWfAtNVrg3zprPgUp0wlpI-Mcww9c977Pka_TRy0VtCsI0qYe2oqcfzPF_yEsoDuI4PRk6aJ5zQjFIJWEdLe69sfsK-uH2hWd1nqRmd6V3k5L-YF6NpDj-iKs8GzO9l0OjIjhwUoQLp4QzXhTiJxzhCJAgptFvUtKmsdp2badNPDoLaeYWEWwpiuz-l0fXqIsjwDnsdBnoDvvFb3O_HmRC6v-FBVhdibpNCCFeCspSzy1hGfDINAzedT8O1Dqx90KwyhUu6mEutSj2fM4ELRgO8dc-NDXYHl373rgSa-I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/despesas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"despesas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"teste@teste.com\",\r\n    \"password\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
